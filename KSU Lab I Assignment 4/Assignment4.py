@@ -132,12 +132,12 @@ def drinks():
     global totalPrice
 
     while run:
-        print("1. Small Cola ($1.99)")
-        print("2. Medium Cola ($2.49)")
-        print("3. Large Cola ($2.99)")
-        print("4. Small Dr. Owl ($2.49)")
-        print("5. Medium Dr. Owl ($2.99)")
-        print("6. Large Dr. Owl ($3.49)")
+        print("1. Scrappy-Cola - Small ($1.99)")
+        print("2. Scrappy-Cola - Medium ($2.49)")
+        print("3. Scrappy-Cola - Large ($2.99)")
+        print("4. Dr. Owl - Small ($2.49)")
+        print("5. Dr. Owl - Medium ($2.99)")
+        print("6. Dr. Owl - Large ($3.49)")
         print("7. Get Back")
 
         userVal = input_choice(input("> "), 1, 7)
