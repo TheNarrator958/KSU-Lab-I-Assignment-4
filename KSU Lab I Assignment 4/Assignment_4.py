@@ -21,23 +21,20 @@ def input_choice(userInput, min, max):
         return userInput
 
 # uses to read and verify user money input
-def input_money(userInput):
-
+def input_money():
+    run = True
+    customTip = 0.0
     global tipPrice
-    global totalPrice
 
-    userInput = userInput.replace("$", "").replace("%", "")
-    customTip = float(userInput)
+    while run:
+        tip = input("Custom tip: \n> $")
+        tip = float(tip.replace("$", "").replace("%", ""))
 
-    if customTip >= 0:
-        tipPrice = customTip
-    else:
-        customTip = customTip / 100
-        newCustomTipPrice = totalPrice * customTip
-        newCustomTipPrice = round(newCustomTipPrice, 2)
-        tipPrice = newCustomTipPrice
-
-    return tipPrice
+        if tip < 0:
+            print("Please, enter a valid monetary amount.")
+        else:
+            tipPrice = tip
+            run = False
 
 def order():
     run = True
@@ -201,7 +198,7 @@ def calculate_tip():
             tipPrice = twentyFivePercent
             run = False
         if userVal == "4":
-            input_money(userVal)
+            input_money()
             run = False
         if userVal == "5":
             tipPrice = 0.0
@@ -229,7 +226,10 @@ def print_total():
     finalPrice = round(finalPrice, 2)
 
     print(f"Subtotal: ${totalPrice}")
-    print(f"Tip: ${tipPrice}")
+    if tipPrice == 0:
+        print("Tip: $0.00")
+    else:
+        print(f"Tip: ${tipPrice}")
     print(f"Tax: ${taxPrice}")
     print(f"Total: ${finalPrice}")
 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2fa0c910-ca53-487b-8c18-16301146af35</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>KSU_Lab_I_Assignment_4.py</StartupFile>
+    <StartupFile>Assignment_4.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="KSU_Lab_I_Assignment_4.py" />
+    <Compile Include="Assignment_4.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
