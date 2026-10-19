@@ -1,3 +1,10 @@
+# Class : CSE 1321L
+# Section : B09
+# Term : Fall 2026
+# Instructor : Jui Mhatre
+# Name : Dominic Lyu
+# Lab : Assignment 4
+
 burgerSingle = 0
 burgerDouble = 0
 fries = 0
